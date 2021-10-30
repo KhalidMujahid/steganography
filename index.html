@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Encode | Decode A text</title>
+		<link rel="stylesheet" href="./style.css">
+		<script src="./steganography.min.js" defer></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Text Encode & Decode System</h1>
+		</div>
+		<div class="container">
+			<div class="encode">
+				<h1>Encode</h1>
+				<div class="file">
+					<input type="file" name="image" type="image/*" autofocus>
+					<img id="data" src="">
+				</div>
+				<div class="text">
+					<input type="text" name="message" placeholder="Enter text here..">
+					<button>Encode Text</button>
+				</div>
+					<hr>
+					<div class="div">
+						<h6 id="textResult"></h6>
+						<img id="result" src="">
+					</div>
+			</div>
+			<div class="decode">
+				<h1>Decode</h1>
+				<input id="decode-file" type="file" name="image" type="image/*" autofocus>
+				<img id="decode-img" src="">
+				<button id="decode-btn">Decode Text</button>
+				<hr>
+				<h3>Result:</h3>
+				<p></p>
+			</div>
+		</div>
+		<script src="./main.js" defer></script>
+	</body>
+</html>

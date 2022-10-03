@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>Encode | Decode A text</title>
-		<link rel="stylesheet" href="./style.css">
-		<script src="./steganography.min.js" defer></script>
-	</head>
-	<body>
-		<div class="header">
-			<h1>Text Encode & Decode System</h1>
-		</div>
-		<div class="container">
-			<div class="encode">
-				<h1>Encode</h1>
-				<div class="file">
-					<input type="file" name="image" type="image/*" autofocus>
-					<img id="data" src="">
-				</div>
-				<div class="text">
-					<input type="text" name="message" placeholder="Enter text here..">
-					<button>Encode Text</button>
-				</div>
-					<hr>
-					<div class="div">
-						<h6 id="textResult"></h6>
-						<img id="result" src="">
-					</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Hospital Management Steganography</title>
+	<link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/font/css/all.min.css">
+	<script src="public/js/steganography.min.js" defer></script>
+</head>
+
+<body>
+	<div class="header bg-primary p-3 text-center">
+		<h1 class="text-white">Text Encode & Decode System</h1>
+	</div>
+	<div class="container my-5">
+		<div class="row">
+			<div class="encode col-md-6 border p-5">
+			<h1>Encode</h1>
+			<div class="file">
+				<input class="form-control mb-3" type="file" name="image" type="image/*" autofocus>
+				<img class="img-thumbnail" id="data" src="">
 			</div>
-			<div class="decode">
-				<h1>Decode</h1>
-				<input id="decode-file" type="file" name="image" type="image/*" autofocus>
-				<img id="decode-img" src="">
-				<button id="decode-btn">Decode Text</button>
-				<hr>
-				<h3>Result:</h3>
-				<p></p>
+			<div class="text">
+				<input class="mt-3 h-100 form-control" type="text" name="message" placeholder="Enter text here..">
+				<button class="btn btn-primary mt-3">Encode Text <i class="fas fa-key"></i></button>
+			</div>
+			<hr>
+			<div class="div">
+				<h6 class="text-success"></h6>
+				<img class="img-thumbnail" id="result" src="">
 			</div>
 		</div>
-		<script src="./main.js" defer></script>
-	</body>
+		<div class="decode col-md-6 border p-5">
+			<h1>Decode</h1>
+			<input class="form-control mb-3" id="decode-file" type="file" name="image" type="image/*" autofocus>
+			<div class="d-flex flex-column">
+				<img class="img-thumbnail" id="decode-img" src="">
+				<button class="btn btn-primary mt-3" id="decode-btn">Decode Text <i class="fas fa-key"></i></button>
+			</div>
+			<hr>
+			<h3>Result:</h3>
+			<p></p>
+		</div>
+		</div>
+	</div>
+	<script src="public/js/main.js" defer></script>
+</body>
+
 </html>
